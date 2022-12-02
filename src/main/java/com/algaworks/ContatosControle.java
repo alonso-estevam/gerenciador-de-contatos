@@ -32,7 +32,9 @@ public class ContatosControle {
 	}
 	
 	@GetMapping("/contatos/novo")
-	public String adicionar() {
-		return "formulario";
+	public ModelAndView adicionar() {
+		ModelAndView modelAndView = new ModelAndView("formulario");
+		modelAndView.addObject("contato", new Contato());
+		return modelAndView;
 	}
 }

@@ -31,33 +31,33 @@
 			<h1>Cadastrar novo contato</h1>
 		</section>
 
-<!-- 		<section> -->
-<!-- 			<form th:action="${contato.novo} ? @{/contatos} : @{/contatos/{contato}(contato=${contato.id})}"  -->
-<!-- 				th:object="${contato}" th:method="${contato.novo} ? post : put"> -->
+ 		<section>
+			<form th:action="${contato.novo} ? @{/contatos} : @{/contatos/{contato}(contato=${contato.id})}" 
+				th:object="${contato}" th:method="${contato.novo} ? post : put">
 				
-<!-- 				<div th:if="${!contato.novo}"> -->
-<!-- 					<label>Código: </label>  -->
+				<div th:if="${!contato.novo}">
+					<label>Código: </label> 
 					
-<!-- 					<input th:field="*{id}" readonly="readonly" /> -->
-<!-- 				</div> -->
+					<input th:field="*{id}" readonly="readonly" />
+				</div>
 				
-<!-- 				<div> -->
-<!-- 					<label>Nome: </label>  -->
+				<div>
+					<label>Nome: </label> 
 					
-<!-- 					<input th:field="*{nome}" /> -->
-<!-- 				</div> -->
+					<input th:field="*{nome}" />
+				</div>
 
-<!-- 				<div> -->
-<!-- 					<label>Telefone: </label>  -->
+				<div>
+					<label>Telefone: </label> 
 					
-<!-- 					<input th:field="*{telefone}"/> -->
-<!-- 				</div> -->
+					<input th:field="*{telefone}"/>
+				</div>
 
-<!-- 				<div> -->
-<!-- 					<button>Salvar</button> -->
-<!-- 				</div> -->
-<!-- 			</form> -->
-<!-- 		</section> -->
+				<div>
+					<button>Salvar</button>
+				</div>
+			</form>
+		</section>
 	</main>
 </body>
 

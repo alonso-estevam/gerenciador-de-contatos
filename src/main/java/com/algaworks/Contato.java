@@ -12,6 +12,10 @@ public class Contato {
 		this.telefone = telefone;
 	}
 	
+	public Contato() {
+		
+	}
+
 	public boolean isNovo() {
 		return id == null;
 	}
